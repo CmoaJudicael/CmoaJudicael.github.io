@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <?php 
-        include 'template/link.php';
-    ?>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="TemplateData/style.css">
     <title>TestHtml Visionneur 3D</title>
   </head>
   <body>
-    <?php 
-        include 'template/header.php';
-    ?>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">NOSVALEURS</a></li>
+                <li><a href="">INFORMATIONS</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">NOTRE EQUIPE</a></li>
+                <li><a href="https://www.facebook.com" target="_blank">NOTRE FACEBOOK</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
@@ -107,9 +122,12 @@
       };
       document.body.appendChild(script);
     </script>
-
-    <?php 
-        include 'template/footer.php';
-    ?>
+    <footer>
+      <ul>
+        <li><a href="">Mentions Legales</a></li>
+        <li>Notre revue de presse</li>
+        <li>Contact</li>
+     </ul>
+    </footer>
   </body>
 </html>
