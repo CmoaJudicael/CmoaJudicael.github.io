@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | TestHtml</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <?php 
+        include 'template/link.php';
+    ?>
+    <title>TestHtml Visionneur 3D</title>
   </head>
   <body>
+    <?php 
+        include 'template/header.php';
+    ?>
+
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -23,6 +26,7 @@
         <div id="unity-build-title">TestHtml</div>
       </div>
     </div>
+
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
@@ -103,5 +107,9 @@
       };
       document.body.appendChild(script);
     </script>
+
+    <?php 
+        include 'template/footer.php';
+    ?>
   </body>
 </html>
