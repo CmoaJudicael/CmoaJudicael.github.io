@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <header>
-      <h1>BONJOUR</h1>
-    </header>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -61,9 +58,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Loader.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Loader.data.br",
-        frameworkUrl: buildUrl + "/Loader.framework.js.br",
-        codeUrl: buildUrl + "/Loader.wasm.br",
+        dataUrl: buildUrl + "/Loader.data",
+        frameworkUrl: buildUrl + "/Loader.framework.js",
+        codeUrl: buildUrl + "/Loader.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "TestHtml",
